@@ -23,3 +23,11 @@ mesh = SubResource("BoxMesh_jpusa")
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 12.3455, 0)
 
 [node name="Player" parent="." instance=ExtResource("1_tj3bk")]
+
+[node name="CameraPivot" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.45837, 0.888761, 0, -0.888761, 0.45837, 0, 19.8513, 15.2439)
+
+[node name="Camera" type="Camera3D" parent="CameraPivot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 19)
+projection = 1
+size = 19.0
